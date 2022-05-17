@@ -5,7 +5,7 @@ const errorHandler = (err, req, res, next) => {
 
     res.json({
         message: err.meesage,
-        stack: process.env.NODE_ENV === 'prodcution' ? null : err.stack
+        stack: process.env.NODE_ENV === 'production' ? null : err.stack
     })
 }
 
